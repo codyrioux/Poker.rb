@@ -15,7 +15,7 @@ This library contains poker math related classes that can be used as building bl
 
 The current goal of the library will be to do ruby implementations of various concepts from the book Mathematics of Poker by Bill Chen and Jerrod Ankenman.
 
-Next up will likely be some PLO specific tools.
+Next up will likely be some PLO specific tools, as that is the game I am currently studying and focusing on.
 
  ====================
  = 2. Documentation =
@@ -39,12 +39,10 @@ Unit tests are placed under the test/ directory and name test_class.rb where cla
 
 I/We use the following workflow with git: http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html
 
-There are many micro commits on the master branch right now as I have been experimenting with the github gui tool for mac. Expect this to subside as I fall back onto command line git.
-
  ===========
  = 5. Todo =
  ===========
 
+- Implement a probability distribution class.
 - Write a PokerStars hand history parser.
-- Write a FullTiltPoker hand history parser.
 - Write code to connect to the PT3 postgresql database and pull necessary data.
