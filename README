@@ -1,0 +1,47 @@
+ ============
+ = Contents =
+ ============
+1. Introduction
+2. Documentation
+3. Testing
+4. Version Control
+5. Todo
+
+ ===================
+ = 1. Introduction =
+ ===================
+
+This library contains poker math related classes that can be used as building blocks for other applications that perform poker analysis / etc... The purpose of this library is to familiarize myself with ruby and tools including git, vim & textmate, YARD, Rake.
+
+
+ ====================
+ = 2. Documentation =
+ ====================
+
+The documentation for this project uses the YARD ruby gem. It can be found at http://yarddoc.org 
+
+The documentation can be built by executing the "yard" command in the project's root directory. One of this project's todo items is to build a rake task to create this documentation for us.
+
+ ==============
+ = 3. Testing =
+ ==============
+
+This document uses Ruby's test/unit classes to run unit tests against itself. As the intention of this library is academic/for profit in poker please ensure to unit test any contributions as accuracy is very important.
+
+Unit tests are placed under the test/ directory and name test_class.rb where class is the name of the class the file is intended to test. The rake task that runs tests will automatically run all tests named in that format. See test/test_icm.rb for an example of the naming standards.
+
+ ======================
+ = 4. Version Control =
+ ======================
+
+I/We use the following workflow with git: http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html
+
+There are many micro commits on the master branch right now as I have been experimenting with the github gui tool for mac. Expect this to subside as I fall back onto command line git.
+
+ ===========
+ = 5. Todo =
+ ===========
+
+- Write a PokerStars hand history parser.
+- Write a FullTiltPoker hand history parser.
+- Write code to connect to the PT3 postgresql database and pull necessary data.
