@@ -13,6 +13,9 @@
 
 This library contains poker math related classes that can be used as building blocks for other applications that perform poker analysis / etc... The purpose of this library is to familiarize myself with ruby and tools including git, vim & textmate, YARD, Rake.
 
+The current goal of the library will be to do ruby implementations of various concepts from the book Mathematics of Poker by Bill Chen and Jerrod Ankenman.
+
+Next up will likely be some PLO specific tools.
 
  ====================
  = 2. Documentation =
