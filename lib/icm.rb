@@ -51,6 +51,7 @@ class Icm
 			other_stacks.push(player_b - player_a)
 			eq_player_a_wins = equity(payouts, other_stacks, player_a * 2)
 			other_stacks.pop
+                        eq_player_a_loses = 0
 		end
 
 		return (eq_player_a - eq_player_a_loses) / (eq_player_a_wins - eq_player_a)
