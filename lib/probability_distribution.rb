@@ -42,4 +42,8 @@ class ProbabilityDistribution < Hash
 		end
 		return sum * trials
 	end
+
+	def stddev(trials = 1)
+		 Math.sqrt(self.variance(trials))
+	end
 end
