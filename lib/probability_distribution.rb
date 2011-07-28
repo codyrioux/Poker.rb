@@ -46,4 +46,8 @@ class ProbabilityDistribution < Hash
 	def stddev(trials = 1)
 		 Math.sqrt(self.variance(trials))
 	end
+
+	def zscore(x)
+		(x - self.ev) / self.stddev
+	end
 end
