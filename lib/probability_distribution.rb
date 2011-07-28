@@ -26,7 +26,7 @@ class ProbabilityDistribution < Hash
 	end
 
 	def ev
-		this.normalize
+		self.normalize
 		sum = 0.0
 		self.each do |key, val|
 			sum += (key * val)
@@ -34,4 +34,12 @@ class ProbabilityDistribution < Hash
 		return sum
 	end
 
+	def variance(trials = 1)
+		expectedValue = self.ev	
+		sum = 0.0
+		self.each do |key, val|
+			sum += val * ((key - expectedValue)**2)	
+		end
+		return sum * trials
+	end
 end
