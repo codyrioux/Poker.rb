@@ -24,4 +24,14 @@ class ProbabilityDistribution < Hash
 			self[key] = self[key] / density
 		end
 	end
+
+	def ev
+		this.normalize
+		sum = 0.0
+		self.each do |key, val|
+			sum += (key * val)
+		end
+		return sum
+	end
+
 end
